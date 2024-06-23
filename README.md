@@ -1,2 +1,2 @@
 # Class Manager
- Class Manager é um sistema básico de gerenciamento de alunos e disciplinas desenvolvido em Python, utilizando Programação Orientada a Objetos (POO).
+ Class Manager é um sistema básico de gerenciamento de alunos e professores desenvolvido em Python, utilizando Programação Orientada a Objetos (POO).
