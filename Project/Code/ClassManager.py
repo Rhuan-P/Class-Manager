@@ -23,17 +23,17 @@ class Usuario:
 
 # Definição da Subclasse Aluno 
 class Aluno(Usuario):
-    def __init__(self, nome, idade, endereco, telefone, email, data_nascimento, genero, cpf, matricula, turma):
-        super().__init__(nome, idade, endereco, telefone, email, data_nascimento, genero, cpf, matricula)
+    def __init__(self,turma,**kw):
         self.turma = turma
+        super().__init__(**kw)
 
     def info(self):
         return f'{super().info()}, Turma: {self.turma}'
 
 # Definição da Subclasse 
 class Professor(Usuario):
-    def __init__(self, nome, idade, endereco, telefone, email, data_nascimento, genero, cpf, matricula, salario):
-        super().__init__(nome, idade, endereco, telefone, email, data_nascimento, genero, cpf, matricula)
+    def __init__(self, salario, **kw):
+        super().__init__(**kw)
         self.salario = salario
 
     def info(self):
