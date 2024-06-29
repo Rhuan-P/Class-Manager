@@ -12,8 +12,11 @@ class Usuario:
         self.matricula = matricula
 
     def login(self, matricula, cpf):
-        pass
-        # TODO
+        if self.matricula == matricula and self.cpf == cpf:
+            return True
+        else:
+            return False
+       
 
     def info(self):
         return (f'Nome: {self.nome}, Idade: {self.idade}, Endereço: {self.endereco}, '
@@ -30,7 +33,7 @@ class Aluno(Usuario):
     def info(self):
         return f'{super().info()}, Turma: {self.turma}'
 
-# Definição da Subclasse 
+# Definição da Subclasse Professor
 class Professor(Usuario):
     def __init__(self, salario, **kw):
         super().__init__(**kw)
